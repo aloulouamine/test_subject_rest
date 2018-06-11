@@ -30,6 +30,8 @@ framework:
     assets: ~
     php_errors:
         log: true
+    templating:
+        engines: ['twig']
 
 # Twig Configuration
 twig:
@@ -79,3 +81,7 @@ fos_rest:
         default_engine: twig
     routing_loader:
         default_format: json
+        include_format: false
+
+
+nelmio_api_doc: ~
